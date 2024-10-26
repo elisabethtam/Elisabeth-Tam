@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <title>Elisabeth Tam's Website</title>
+
+        <style>
+            body {
+                text-align: center;
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                color: midnightblue;
+            }
+            a{
+                color: magenta;
+                text-decoration: none;
+            }
+            #header {
+                /*background-color: rgb(193, 255, 234);*/
+                background-image: linear-gradient(rgb(255, 227, 248), rgb(255, 204, 240));
+                position:fixed;
+                top: 0px;
+                left: 0px;
+                width: 100%;
+                height: 90px;
+                z-index: 999997;
+            }
+            #name {
+                position: relative;
+                font-size: 2em;
+                top: -20px;
+                color: midnightblue;
+            }
+            .internal-link{
+                font-family: Verdana, Geneva, Tahoma, sans-serif;
+                text-decoration: none;
+                color: midnightblue;
+                position: relative;
+                bottom: 40px;
+                transition-duration: 0.4s;
+            }
+            .internal-link:hover {
+                color: rgb(47, 157, 193);
+            }
+            #general-info{
+                width: 90%;
+                height: 450px;
+                background-image: linear-gradient(rgb(255, 232, 245), rgb(148, 240, 238));
+                margin: auto;
+                border-radius: 25px;
+                position: relative;
+                top: 110px;
+                margin-bottom: 230px;
+            }
+            #headshot {
+                width: 400px;
+                position: relative;
+                top: 50px;
+                left: -10%;
+            }/*
+            #contact-info {
+                font-family: 'Times New Roman', Times, serif;
+                background-color: ivory;
+                border-style: solid;
+                border-width: 2px;
+                border-color: midnightblue;
+                width: 300px;
+                height: 190px;
+                position: relative;
+                bottom: 230px;
+                left: 60%;
+            }*/
+            #lets_connect {
+                position: relative;
+                bottom: 95px;
+            }
+            #github-bar {
+                position: absolute;
+                top: 625px;
+                right: 15%;
+                width: 15%;
+                background-color: black;
+            }
+            #github {
+                height: 40px;
+            }
+            #email {
+                width: 40%;
+                background-image: linear-gradient(to right, rgb(255, 227, 248), rgb(255, 204, 240));
+                position: absolute;
+                top: 625px;
+                left: 30%;
+                right: 30%;
+                height: 43px;
+            }
+            #linkedin-bar{
+                width: 15%;
+                background-color: rgb(0,119,181);
+                position: absolute;
+                top: 625px;
+                left: 15%;
+            }
+            #linkedin{
+                height: 40px;
+            }
+            #hello {
+                background-image: linear-gradient(midnightblue, rgb(255, 211, 218));
+                width: 102%;
+                position: relative;
+                left: -9px;
+                color: ivory;
+                padding-top: 20px;
+                padding-bottom: 15px;
+            }
+            #intro-para {
+                width: 500px;
+                margin: auto;
+                font-family: cursive;
+            }
+            #paris-button {
+                background-color: rgb(148, 240, 238);
+                border-style: solid;
+                border-radius: 12px;
+                border-width: 2px;
+                border-color: rgb(148, 240, 238);
+                padding: 10px 24px;
+                transition-duration: 0.4s;
+            }
+            #paris-button:hover {
+                background-color: white; 
+                border-style: solid;
+                border-radius: 12px;
+                border-width: 2px;
+                border-color: rgb(148, 240, 238);
+            }  
+            .learn-more {
+                color: midnightblue;
+                font-size: 1.2em;
+            }
+            #insta-button {
+                background-image: linear-gradient(to right, #833ab4,#fd1d1d,#fcb045);
+                border-radius: 12px;
+                padding: 5px 8px;
+                border-style: solid;
+                border-width: 0px;
+            }
+            #insta {
+                color: white;
+                font-size: 1.5em;
+            }
+            .line-break{
+                width: 100%;
+                height: 1px;
+                background-image: linear-gradient(to right, lightblue, midnightblue);
+                margin-top: 25px;
+                margin-bottom: 30px;
+            }
+            .mini-line-break{
+                width: 50%;
+                margin: auto;
+                height: 1px;
+                background-image: linear-gradient(to right, rgb(255, 246, 188), rgb(244, 152, 198));
+                margin-top: 15px;
+                margin-bottom: 20px;
+            }
+            #footer {
+                background-image: linear-gradient(rgb(255, 204, 240),rgb(255, 227, 248));
+                height: 100px;
+                width: 102%;
+                position: relative;
+                left: -9px;
+                top: 10px;
+            }
+            #back-to-top {
+                position: relative;
+                top: 40px;
+                text-decoration: none;
+            }
+            
+        </style>
+    </head>
+
+    <body>
+        <div id="header">
+            <p id="name">𝐸𝓁𝒾𝓈𝒶𝒷𝑒𝓉𝒽 𝒯𝒶𝓂</p> 
+            <p> 
+                <a href="#education" class="internal-link">Education</a> &emsp;
+                <a href="#experience" class="internal-link">Experience</a> &emsp;
+                <a href="#projects" class="internal-link">Projects</a> &emsp;
+                <a href="#skills" class="internal-link">Skillls</a> &emsp;
+            </p>
+        </div>
+
+        <div id="general-info">
+            <img id="headshot" src="prof_headshot.png">
+            <!---
+            <div id="contact-info">
+                <h4>Computer Engineering, B.S.</h4>
+                <h4>Rutgers University, class of 2025</h4>
+                <p>Email: <a href= "mailto: elisabethtam3@gmail.com"> elisabethtam3@gmail.com </a> </p>
+                <a href="www.linkedin.com/in/elisabeth-tam-3348a428b"> <img id="linkedin" src="linkedin_logo.png"></a>
+                <a href="https://github.com/elisabethtam"> <img id="github" src="github_logo.jpeg"></a>
+            </div> -->
+        </div>
+
+        <h3 id="lets_connect">Let's connect!</h3>
+        <div id="contact-info">
+            <div id="linkedin-bar"> <a href="https://www.linkedin.com/in/elisabeth-tam-3348a428b/"> <img id="linkedin" src="linkedin_logo.png"></a></div>
+            <div id="email"><p>Email: <a href= "mailto: elisabethtam3@gmail.com"> elisabethtam3@gmail.com </a> </p></div>
+            <div id="github-bar"><a href="https://github.com/elisabethtam"> <img id="github" src="github_logo.jpeg"></a></div>
+        </div>
+
+        <div id="hello">
+            <h2>Welcome to my website!</h2>
+            <p id="intro-para">I'm currently studying computer engineering at Rutgers University - New Brunswick where I've been focused on machine learning and software engineering. 
+                My interest in engineering stems from my love for problem solving and creating unique solutions. In my free time, I enjoy 
+                more artistic endeavors, such as sewing, beauty, music, and fashion. I'm seeking a role where I can combine my technical
+                experience with my creative side, with a company that empowers consumers with its brand.
+            </p>
+            <h3>~ Sincerely, Elisabeth</h3>
+            <h4>          zᶻ <br>
+                ૮˶- ﻌ -˶ა⌒)ᦱ</h4>
+        </div>
+
+        <h2 id="education">Education</h2>
+        <h3>Rutgers University(NB), School of Engineering</h3>
+        <h4>B.S. in Computer Engineering</h4>
+        <p>Expected Graduation: December 2025</p>
+        <p>GPA: 3.786</p>
+        <div class="mini-line-break"></div>
+        <h4>Summer in Paris Study Abroad Program</h4>
+        <p>June-July 2023</p>
+        <button id="paris-button"><a href="https://www.french.rutgers.edu/academics/study-abroad/summer-in-paris" class="learn-more">Learn More ></a></button>
+
+        <div class="line-break"></div>
+
+        <h2 id="experience">Experience</h2>
+        <h3>Mathnasium Learning Center</h3>
+        <h4>Tutor, Software Developper</h4>
+        <p>May 2024 - Present</p>
+        <h3>Rutgers Learning Centers</h3>
+        <h4>Learning Assistant</h4>
+        <p>September - December 2023</p>
+
+        <div class="line-break"></div>
+
+        <h2>Leadership & Organizations</h2>
+        <h3>Rutgers Institute of Electrical and Electronics Engineers</h3>
+        <h4>Secretary and Social Media Manager</h4>
+        <p>April 2023 - December 2023</p>
+        <h4>Member</h4>
+        <p>September 2021 - Present</p>
+        <button id="insta-button"><a id="insta" href="https://www.instagram.com/rutgersieee/">Instagram</a></button>
+        <h3>Machine Learning/Artificial Intelligence</h3>
+        <h4>Member</h4>
+        <p>September 2021 - Present</p>
+
+        <div class="line-break"></div>
+
+        <h2>Awards</h2>
+        <h3>Dean's List</h3>
+        <p>Fall 2021 - Spring 2023</p>
+
+        <div class="line-break"></div>
+
+        <h2 id="projects">Projects</h2>
+        <h3>Mathnasium Punch Card Tracker</h3>
+        <button><a href="https://github.com/elisabethtam/Punch-Card-Tracker/tree/main">Link to github repo</a></button>
+        <h3>RIEEE Hackathon</h3>
+        <h4>Winner of RUPA Bed Races Challenge</h4>
+        <button><a href="https://github.com/AFE123x/RUPA-BedWars-Hackathon-Project">Link to github repo</a></button>
+        <h3>Google Sheets Goal Tracker</h3>
+        <p>blurb</p>
+        <h3>what i've sewn recently</h3>
+
+        <div class="line-break"></div>
+
+        <h2>Courses</h2>
+        <h3>Machine Learning for Engineers</h3>
+        <p>projects i did: links to github repo</p>
+        <button>Click here for full list of courses (unofficial transcript)</button>
+
+        <div class="line-break"></div>
+
+        <h2 id="skills">Skills</h2>
+        <!--web development, computer programming, electrical engineering, microsoft office-->
+        <h3>Programming Languages</h3>
+        <p>Python, C, MATLAB, RISC-V, Java, HTML, CSS, Javascript</p>
+        <h3>Languages</h3>
+        <p>French, Cantonese</p>
+        <h3>Google Sheets</h3>
+        <p>images of spreadsheets i've made</p>
+
+        <div id="footer"><a id="back-to-top" href="#general-info">Back to Top</a></div>
+
+        
+        <script type="text/javascript">
+
+        </script>
+
+
+    </body>
+
+</html>
